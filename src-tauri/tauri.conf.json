@@ -1,0 +1,91 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Quill",
+  "version": "0.1.0",
+  "identifier": "com.quill.desktop",
+  "build": {
+    "beforeDevCommand": "bun run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "bun run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "macOSPrivateApi": true,
+    "windows": [],
+    "security": {
+      "csp": null,
+      "assetProtocol": {
+        "enable": true,
+        "scope": {
+          "allow": ["**"],
+          "requireLiteralLeadingDot": false
+        }
+      }
+    }
+  },
+  "bundle": {
+    "active": true,
+    "createUpdaterArtifacts": true,
+    "targets": "all",
+    "resources": ["resources/**/*"],
+    "license": "MIT",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "macOS": {
+      "files": {},
+      "hardenedRuntime": true,
+      "minimumSystemVersion": "10.15",
+      "signingIdentity": "-",
+      "entitlements": "Entitlements.plist"
+    },
+    "linux": {
+      "deb": {
+        "depends": [
+          "libgtk-layer-shell0",
+          "libopenblas0",
+          "libssl3t64 | libssl3"
+        ],
+        "files": {
+          "/usr/lib/Quill": "transcribe-libs"
+        }
+      },
+      "rpm": {
+        "depends": [
+          "libgtk-layer-shell.so.0()(64bit)",
+          "libopenblas.so.0()(64bit)"
+        ],
+        "compression": {
+          "type": "none"
+        },
+        "files": {
+          "/usr/lib/Quill": "transcribe-libs"
+        }
+      },
+      "appimage": {
+        "bundleMediaFramework": true,
+        "files": {
+          "/usr/lib": "transcribe-libs"
+        }
+      }
+    },
+    "windows": {
+      "nsis": {
+        "template": "nsis/installer.nsi",
+        "installerIcon": "icons/icon.ico"
+      }
+    }
+  },
+  "plugins": {
+    "updater": {
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDU4QTQ0QUZGQTI0RkI4QzMKUldURHVFK2kvMHFrV0piZEJZNVNpRmUrMkxNUlgxNkk4VUc2MTVGSHZnaXNYM0tNdU9VUTBQcVQK",
+      "endpoints": [
+        "https://github.com/mcgarrahjohn/quill/releases/latest/download/latest.json"
+      ]
+    }
+  }
+}
