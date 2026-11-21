@@ -53,3 +53,6 @@ __pycache__/
 /release/*.AppImage
 /release/*.deb
 /release/*.rpm
+
+# Built output of the local @quill/models package is committed on purpose (CI has no build step for it)
+!packages/quill-models/dist
