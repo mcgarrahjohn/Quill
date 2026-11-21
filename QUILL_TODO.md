@@ -83,3 +83,6 @@ Built in: General → "Remove filler words", off by default. Off means no downlo
 - [ ] English-focused: other languages may be left unchanged or cleaned poorly. Consider saying so in the UI.
 - [ ] Tricky corrections ("option A, actually no, option B") can still come out wrong; the safety check mostly catches this.
 - [ ] Show the Qwen/candle credits on the About page (they are in NOTICE.md).
+
+## 13. Signing the installers (when you have accounts)
+`.github/workflows/build.yml` deliberately sets no `APPLE_*` / `AZURE_*` variables, because empty ones make the Mac build fail. When you get an Apple Developer account and a Windows signing account, add those variables back to the "Build with Tauri" step and set `sign-binaries: true` in `release.yml`.
