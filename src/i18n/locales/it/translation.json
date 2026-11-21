@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "Rimuovi le parole riempitive",
       "label": "Ripulisci il dettato",
-      "description": "Elimina “ehm” e “uh” e mantiene la tua correzione (“tre, no, quattro” diventa “quattro”).",
+      "description": "Elimina “ehm” e “uh” e mantiene la tua correzione (“tre, no, quattro” diventa “quattro”). Funziona sul tuo computer.",
       "needsDownload": "1,1 GB, una sola volta.",
       "download": "Scarica",
       "downloading": "Download in corso… {{percent}}%",

@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "Dolgu sözcüklerini kaldır",
       "label": "Dikteyi temizle",
-      "description": "“Ee” ve “şey” gibi sözcükleri siler, düzeltmenizi korur (“üç, yok, dört” “dört” olur).",
+      "description": "“Ee” ve “şey” gibi sözcükleri siler, düzeltmenizi korur (“üç, yok, dört” “dört” olur). Bilgisayarınızda çalışır.",
       "needsDownload": "1,1 GB, tek seferlik.",
       "download": "İndir",
       "downloading": "İndiriliyor… %{{percent}}",

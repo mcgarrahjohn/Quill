@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "Remover palavras de preenchimento",
       "label": "Limpar o ditado",
-      "description": "Remove “hum” e “é”, e mantém sua correção (“três, não, quatro” vira “quatro”).",
+      "description": "Remove “hum” e “é”, e mantém sua correção (“três, não, quatro” vira “quatro”). Roda no seu computador.",
       "needsDownload": "1,1 GB, uma única vez.",
       "download": "Baixar",
       "downloading": "Baixando… {{percent}}%",

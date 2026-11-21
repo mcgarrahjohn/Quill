@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "移除贅詞",
       "label": "整理聽寫內容",
-      "description": "移除「嗯」「呃」，並保留你的更正（「三，不，四」會變成「四」）。",
+      "description": "移除「嗯」「呃」，並保留你的更正（「三，不，四」會變成「四」）。在你的電腦上執行。",
       "needsDownload": "1.1 GB，僅一次。",
       "download": "下載",
       "downloading": "正在下載… {{percent}}%",

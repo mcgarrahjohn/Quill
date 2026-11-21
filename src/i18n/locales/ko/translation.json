@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "군말 제거",
       "label": "받아쓰기 정리",
-      "description": "“음”, “어”를 지우고 정정은 반영합니다(“셋, 아니, 넷”은 “넷”).",
+      "description": "“음”, “어”를 지우고 정정은 반영합니다(“셋, 아니, 넷”은 “넷”). 사용자의 컴퓨터에서 실행됩니다.",
       "needsDownload": "1.1 GB, 한 번만.",
       "download": "다운로드",
       "downloading": "다운로드 중… {{percent}}%",

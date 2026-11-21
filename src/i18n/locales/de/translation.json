@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "Füllwörter entfernen",
       "label": "Diktat bereinigen",
-      "description": "Entfernt „äh“ und „ähm“ und übernimmt deine Korrektur („drei, nein, vier“ wird zu „vier“).",
+      "description": "Entfernt „äh“ und „ähm“ und übernimmt deine Korrektur („drei, nein, vier“ wird zu „vier“). Läuft auf deinem Computer.",
       "needsDownload": "1,1 GB, einmalig.",
       "download": "Herunterladen",
       "downloading": "Wird heruntergeladen … {{percent}} %",

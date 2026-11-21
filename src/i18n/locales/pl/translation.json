@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "Usuń słowa-wypełniacze",
       "label": "Oczyść dyktowanie",
-      "description": "Usuwa „yyy” i „eee” oraz zachowuje twoją poprawkę („trzy, nie, cztery” zmienia się w „cztery”).",
+      "description": "Usuwa „yyy” i „eee” oraz zachowuje twoją poprawkę („trzy, nie, cztery” zmienia się w „cztery”). Działa na twoim komputerze.",
       "needsDownload": "1,1 GB, jednorazowo.",
       "download": "Pobierz",
       "downloading": "Pobieranie… {{percent}}%",

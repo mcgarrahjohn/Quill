@@ -4,8 +4,6 @@ import { InfoTooltip } from "./InfoTooltip";
 interface SettingContainerProps {
   title: string;
   description: string;
-  /** Inline mode only: shown right after the description (for example a link). */
-  descriptionExtra?: React.ReactNode;
   children: React.ReactNode;
   descriptionMode?: "inline" | "tooltip";
   grouped?: boolean;
@@ -19,7 +17,6 @@ interface SettingContainerProps {
 export const SettingContainer: React.FC<SettingContainerProps> = ({
   title,
   description,
-  descriptionExtra,
   children,
   descriptionMode = "tooltip",
   grouped = false,
@@ -64,7 +61,6 @@ export const SettingContainer: React.FC<SettingContainerProps> = ({
           </h3>
           <p className={`text-sm ${disabled ? "opacity-50" : ""}`}>
             {description}
-            {descriptionExtra}
           </p>
         </div>
         <div className="w-full">{children}</div>
@@ -109,7 +105,6 @@ export const SettingContainer: React.FC<SettingContainerProps> = ({
         </h3>
         <p className={`text-sm ${disabled ? "opacity-50" : ""}`}>
           {description}
-          {descriptionExtra}
         </p>
       </div>
       <div className={controlClasses}>{children}</div>

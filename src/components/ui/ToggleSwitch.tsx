@@ -10,7 +10,6 @@ interface ToggleSwitchProps {
   label: string;
   ariaLabel?: string;
   description: string;
-  descriptionExtra?: React.ReactNode;
   descriptionMode?: "inline" | "tooltip";
   grouped?: boolean;
   tooltipPosition?: "top" | "bottom";
@@ -24,7 +23,6 @@ export const ToggleSwitch: React.FC<ToggleSwitchProps> = ({
   label,
   ariaLabel,
   description,
-  descriptionExtra,
   descriptionMode = "tooltip",
   grouped = false,
   tooltipPosition = "top",
@@ -33,7 +31,6 @@ export const ToggleSwitch: React.FC<ToggleSwitchProps> = ({
     <SettingContainer
       title={label}
       description={description}
-      descriptionExtra={descriptionExtra}
       descriptionMode={descriptionMode}
       grouped={grouped}
       disabled={disabled}

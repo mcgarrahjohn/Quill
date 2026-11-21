@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "Remove filler words",
       "label": "Clean up dictation",
-      "description": "Drops “um” and “uh”, and keeps your correction (“three, no, four” becomes “four”).",
+      "description": "Drops “um” and “uh”, and keeps your correction (“three, no, four” becomes “four”). Runs on your computer.",
       "needsDownload": "1.1 GB, one time.",
       "download": "Download",
       "downloading": "Downloading… {{percent}}%",

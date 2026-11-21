@@ -41,7 +41,7 @@ export const GeneralSettings: React.FC = () => {
       </SettingsGroup>
       <ModelSettingsCard />
       <SettingsGroup title={t("settings.cleanup.title")}>
-        <SmartCleanup descriptionMode="inline" grouped={true} />
+        <SmartCleanup descriptionMode="tooltip" grouped={true} />
       </SettingsGroup>
       <SettingsGroup title={t("settings.sound.title")}>
         <MicrophoneSelector descriptionMode="tooltip" grouped={true} />

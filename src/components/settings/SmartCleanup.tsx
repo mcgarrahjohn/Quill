@@ -22,7 +22,7 @@ const HELP_URL =
  * it off frees the memory it uses.
  */
 export const SmartCleanup: React.FC<SmartCleanupProps> = React.memo(
-  ({ descriptionMode = "inline", grouped = true }) => {
+  ({ descriptionMode = "tooltip", grouped = true }) => {
     const { t } = useTranslation();
     const { getSetting, updateSetting, isUpdating } = useSettings();
     const enabled = getSetting("smart_cleanup_enabled") ?? false;
@@ -147,25 +147,25 @@ export const SmartCleanup: React.FC<SmartCleanupProps> = React.memo(
           checked={enabled}
           onChange={(value) => updateSetting("smart_cleanup_enabled", value)}
           isUpdating={isUpdating("smart_cleanup_enabled")}
-          label=""
-          ariaLabel={t("settings.cleanup.label")}
+          label={t("settings.cleanup.label")}
           description={t("settings.cleanup.description")}
-          descriptionExtra={
-            <>
-              {" "}
+          descriptionMode={descriptionMode}
+          grouped={grouped}
+        />
+        {detail && (
+          <div className="flex items-center gap-3 px-4 pb-3 pt-1 text-xs">
+            <div className="min-w-0 flex-1">{detail}</div>
+            {enabled && (
               <button
                 type="button"
-                className="underline text-ink-2 hover:text-ink"
+                className="shrink-0 underline text-ink-2 hover:text-ink"
                 onClick={() => openUrl(HELP_URL)}
               >
                 {t("settings.cleanup.howItWorks")} ↗
               </button>
-            </>
-          }
-          descriptionMode={descriptionMode}
-          grouped={grouped}
-        />
-        {detail && <div className="px-4 pb-3 pt-1 text-xs">{detail}</div>}
+            )}
+          </div>
+        )}
       </>
     );
   },

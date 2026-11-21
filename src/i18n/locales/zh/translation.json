@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "去除口头语",
       "label": "整理听写内容",
-      "description": "去掉“嗯”“呃”，并保留你的更正（“三，不，四”变为“四”）。",
+      "description": "去掉“嗯”“呃”，并保留你的更正（“三，不，四”变为“四”）。在你的电脑上运行。",
       "needsDownload": "1.1 GB，仅一次。",
       "download": "下载",
       "downloading": "正在下载… {{percent}}%",
