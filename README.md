@@ -32,6 +32,8 @@ The process is entirely local:
   - **Parakeet V3** - CPU-optimized model with excellent performance and automatic language detection
 - Works on Windows, macOS, and Linux
 
+**Optional:** [Remove filler words](docs/remove-filler-words.md) cleans up "um" and self-corrections on your computer. It is off by default.
+
 ## Quick Start
 
 ### Installation
