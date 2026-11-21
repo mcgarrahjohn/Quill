@@ -1,6 +1,5 @@
 # Quill
 
-> **Quill is a fork of [Handy](https://github.com/cjpais/Handy) by CJ Pais, used under the MIT License.** See [NOTICE.md](NOTICE.md) for attribution and [QUILL_TODO.md](QUILL_TODO.md) for what still needs your own accounts, keys and hosting.
 
 
 
