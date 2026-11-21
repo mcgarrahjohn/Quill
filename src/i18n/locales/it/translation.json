@@ -898,6 +898,20 @@
           "details": "Quill usa ggml per il riconoscimento vocale veloce in locale. Grazie a Georgi Gerganov e collaboratori per il fantastico lavoro."
         }
       }
+    },
+    "cleanup": {
+      "title": "Rimuovi le parole riempitive",
+      "label": "Ripulisci il dettato",
+      "description": "Elimina “ehm” e “uh” e mantiene la tua correzione (“tre, no, quattro” diventa “quattro”). Funziona in locale.",
+      "needsDownload": "1,1 GB, una sola volta.",
+      "download": "Scarica",
+      "downloading": "Download in corso… {{percent}}%",
+      "cancel": "Annulla",
+      "failed": "Download non riuscito: {{error}}",
+      "retry": "Riprova",
+      "ready": "Pronto.",
+      "onDisk": "Modello su disco ({{size}} GB).",
+      "remove": "Rimuovi"
     }
   },
   "footer": {

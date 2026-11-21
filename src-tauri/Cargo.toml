@@ -79,6 +79,13 @@ isolang = "2"
 chrono = "0.4"
 rusqlite = { version = "0.37", features = ["bundled"] }
 sha2 = "0.10"
+
+# On-device text cleanup (fixes filler words and self-corrections). Pure Rust, no ggml.
+candle-core = "0.11"
+candle-nn = "0.11"
+candle-transformers = "0.11"
+tokenizers = { version = "0.21", default-features = false, features = ["onig"] }
+tracing = "0.1"
 libc = "0.2"
 # Every model runs through transcribe-cpp (GGUF/ggml, native backends).
 # Per-platform backend features are added in the target tables (Cargo unifies
@@ -168,6 +175,10 @@ transcribe-cpp = { version = "0.4.2", default-features = false, features = ["met
 transcribe-cpp = { version = "0.4.2", default-features = false }
 
 [target.'cfg(target_os = "macos")'.dependencies]
+# Mac graphics acceleration for the on-device cleanup model
+candle-core = { version = "0.11", features = ["metal"] }
+candle-nn = { version = "0.11", features = ["metal"] }
+candle-transformers = { version = "0.11", features = ["metal"] }
 tauri-nspanel = { git = "https://github.com/ahkohd/tauri-nspanel", branch = "v2.1" }
 # Used by the receipt-sequenced ("reliable") paste path for lazy NSPasteboard
 # promises. Versions track what Tauri already pulls in.

@@ -898,6 +898,20 @@
           "details": "La transcripció local de veu a text del Quill es basa en el transcribe.cpp i el ggml. Gràcies a la gran feina de Georgi Gerganov i dels col·laboradors."
         }
       }
+    },
+    "cleanup": {
+      "title": "Treu les mots de farciment",
+      "label": "Neteja el dictat",
+      "description": "Elimina “eh” i “mm” i conserva la teva correcció (“tres, no, quatre” passa a “quatre”). S’executa localment.",
+      "needsDownload": "1,1 GB, una sola vegada.",
+      "download": "Baixa",
+      "downloading": "S’està baixant… {{percent}}%",
+      "cancel": "Cancel·la",
+      "failed": "La baixada ha fallat: {{error}}",
+      "retry": "Torna-ho a provar",
+      "ready": "A punt.",
+      "onDisk": "Model al disc ({{size}} GB).",
+      "remove": "Elimina"
     }
   },
   "footer": {

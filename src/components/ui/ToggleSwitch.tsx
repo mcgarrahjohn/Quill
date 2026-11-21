@@ -8,6 +8,7 @@ interface ToggleSwitchProps {
   disabled?: boolean;
   isUpdating?: boolean;
   label: string;
+  ariaLabel?: string;
   description: string;
   descriptionMode?: "inline" | "tooltip";
   grouped?: boolean;
@@ -20,6 +21,7 @@ export const ToggleSwitch: React.FC<ToggleSwitchProps> = ({
   disabled = false,
   isUpdating = false,
   label,
+  ariaLabel,
   description,
   descriptionMode = "tooltip",
   grouped = false,
@@ -38,7 +40,7 @@ export const ToggleSwitch: React.FC<ToggleSwitchProps> = ({
         checked={checked}
         onChange={onChange}
         disabled={disabled || isUpdating}
-        ariaLabel={label}
+        ariaLabel={ariaLabel ?? label}
       />
       {isUpdating && (
         <div className="absolute inset-0 flex items-center justify-center">

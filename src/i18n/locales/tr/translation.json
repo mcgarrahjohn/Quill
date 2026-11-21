@@ -898,6 +898,20 @@
           "details": "Quill'nin yerel konuşmadan metne dönüştürme özelliği transcribe.cpp ve ggml üzerine kuruludur. Georgi Gerganov'a ve katkıda bulunanlara harika çalışmaları için teşekkür ederiz."
         }
       }
+    },
+    "cleanup": {
+      "title": "Dolgu sözcüklerini kaldır",
+      "label": "Dikteyi temizle",
+      "description": "“Ee” ve “şey” gibi sözcükleri siler, düzeltmenizi korur (“üç, yok, dört” “dört” olur). Yerel çalışır.",
+      "needsDownload": "1,1 GB, tek seferlik.",
+      "download": "İndir",
+      "downloading": "İndiriliyor… %{{percent}}",
+      "cancel": "İptal",
+      "failed": "İndirme başarısız oldu: {{error}}",
+      "retry": "Tekrar dene",
+      "ready": "Hazır.",
+      "onDisk": "Disk üzerindeki model ({{size}} GB).",
+      "remove": "Kaldır"
     }
   },
   "footer": {

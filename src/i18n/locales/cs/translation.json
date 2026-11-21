@@ -898,6 +898,20 @@
           "details": "Quill používá ggml pro rychlé lokální zpracování řeči na text. Díky skvělé práci Georgiho Gerganova a přispěvatelů."
         }
       }
+    },
+    "cleanup": {
+      "title": "Odstranit vycpávková slova",
+      "label": "Vyčistit diktování",
+      "description": "Odstraní „ehm“ a „ee“ a ponechá vaši opravu („tři, ne, čtyři“ se změní na „čtyři“). Běží lokálně.",
+      "needsDownload": "1,1 GB, jednorázově.",
+      "download": "Stáhnout",
+      "downloading": "Stahování… {{percent}} %",
+      "cancel": "Zrušit",
+      "failed": "Stahování se nezdařilo: {{error}}",
+      "retry": "Zkusit znovu",
+      "ready": "Připraveno.",
+      "onDisk": "Model na disku ({{size}} GB).",
+      "remove": "Odebrat"
     }
   },
   "footer": {

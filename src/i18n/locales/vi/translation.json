@@ -898,6 +898,20 @@
           "details": "Quill sử dụng ggml để xử lý chuyển đổi giọng nói thành văn bản nhanh, cục bộ. Cảm ơn công việc tuyệt vời của Georgi Gerganov và các cộng tác viên."
         }
       }
+    },
+    "cleanup": {
+      "title": "Xóa từ đệm",
+      "label": "Làm sạch bản đọc",
+      "description": "Xóa “ừm” và “à”, giữ lại phần sửa của bạn (“ba, không, bốn” thành “bốn”). Chạy cục bộ.",
+      "needsDownload": "1,1 GB, chỉ một lần.",
+      "download": "Tải xuống",
+      "downloading": "Đang tải xuống… {{percent}}%",
+      "cancel": "Hủy",
+      "failed": "Tải xuống không thành công: {{error}}",
+      "retry": "Thử lại",
+      "ready": "Sẵn sàng.",
+      "onDisk": "Mô hình trên ổ đĩa ({{size}} GB).",
+      "remove": "Gỡ bỏ"
     }
   },
   "footer": {

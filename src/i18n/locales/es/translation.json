@@ -898,6 +898,20 @@
           "details": "El habla a texto local de Quill está construido sobre transcribe.cpp y ggml. Gracias al increíble trabajo de Georgi Gerganov y colaboradores."
         }
       }
+    },
+    "cleanup": {
+      "title": "Quitar muletillas",
+      "label": "Limpiar el dictado",
+      "description": "Elimina “eh” y “um”, y conserva tu corrección (“tres, no, cuatro” pasa a “cuatro”). Se ejecuta localmente.",
+      "needsDownload": "1,1 GB, una sola vez.",
+      "download": "Descargar",
+      "downloading": "Descargando… {{percent}} %",
+      "cancel": "Cancelar",
+      "failed": "La descarga falló: {{error}}",
+      "retry": "Reintentar",
+      "ready": "Listo.",
+      "onDisk": "Modelo en disco ({{size}} GB).",
+      "remove": "Quitar"
     }
   },
   "footer": {

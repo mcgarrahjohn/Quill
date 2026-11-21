@@ -14,6 +14,7 @@ import { MuteWhileRecording } from "../MuteWhileRecording";
 import { ModelSettingsCard } from "./ModelSettingsCard";
 import { PreferredLanguages } from "../PreferredLanguages";
 import { ChineseScriptSetting } from "../ChineseScript";
+import { SmartCleanup } from "../SmartCleanup";
 import { isChinese } from "@/lib/utils/languageSuggestions";
 
 export const GeneralSettings: React.FC = () => {
@@ -39,6 +40,9 @@ export const GeneralSettings: React.FC = () => {
         )}
       </SettingsGroup>
       <ModelSettingsCard />
+      <SettingsGroup title={t("settings.cleanup.title")}>
+        <SmartCleanup descriptionMode="inline" grouped={true} />
+      </SettingsGroup>
       <SettingsGroup title={t("settings.sound.title")}>
         <MicrophoneSelector descriptionMode="tooltip" grouped={true} />
         <ChannelSelector descriptionMode="tooltip" grouped={true} />

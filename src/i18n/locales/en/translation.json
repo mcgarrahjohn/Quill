@@ -898,6 +898,20 @@
           "details": "Quill's local speech-to-text is built on transcribe.cpp and ggml. Thanks to the amazing work by Georgi Gerganov and contributors."
         }
       }
+    },
+    "cleanup": {
+      "title": "Remove filler words",
+      "label": "Clean up dictation",
+      "description": "Drops “um” and “uh”, and keeps your correction (“three, no, four” becomes “four”). Runs locally.",
+      "needsDownload": "1.1 GB, one time.",
+      "download": "Download",
+      "downloading": "Downloading… {{percent}}%",
+      "cancel": "Cancel",
+      "failed": "The download failed: {{error}}",
+      "retry": "Try again",
+      "ready": "Ready.",
+      "onDisk": "Model on disk ({{size}} GB).",
+      "remove": "Remove"
     }
   },
   "footer": {

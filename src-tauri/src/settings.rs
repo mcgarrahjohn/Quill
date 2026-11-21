@@ -533,6 +533,10 @@ pub struct AppSettings {
     pub external_script_path: Option<String>,
     #[serde(default = "default_filler_word_removal_enabled")]
     pub filler_word_removal_enabled: bool,
+    /// Optional on-device cleanup of each dictation (removes fillers, applies
+    /// self-corrections). Off by default; see `crate::cleanup`.
+    #[serde(default = "default_smart_cleanup_enabled")]
+    pub smart_cleanup_enabled: bool,
     #[serde(default)]
     pub custom_filler_words: Option<Vec<String>>,
     /// Fresh installs default from the OS locale; existing stores are migrated
@@ -649,6 +653,10 @@ fn default_language_detection_window_secs() -> u32 {
 
 fn default_filler_word_removal_enabled() -> bool {
     true
+}
+
+fn default_smart_cleanup_enabled() -> bool {
+    false
 }
 
 fn default_chinese_script() -> ChineseScript {
@@ -1065,6 +1073,7 @@ pub fn get_default_settings() -> AppSettings {
         typing_tool: default_typing_tool(),
         external_script_path: None,
         filler_word_removal_enabled: default_filler_word_removal_enabled(),
+        smart_cleanup_enabled: default_smart_cleanup_enabled(),
         custom_filler_words: None,
         chinese_script: default_chinese_script(),
         transcribe_accelerator: TranscribeAcceleratorSetting::default(),
@@ -1555,6 +1564,7 @@ mod tests {
         assert_eq!(settings.hold_threshold_ms, default_hold_threshold_ms());
         assert!(!settings.audio_feedback);
         assert!(settings.filler_word_removal_enabled);
+        assert!(!settings.smart_cleanup_enabled, "cleanup must be off unless the user turns it on");
         // Bindings default to empty; the load path merges the real defaults in.
         assert!(settings.bindings.is_empty());
     }

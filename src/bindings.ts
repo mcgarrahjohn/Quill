@@ -570,6 +570,31 @@ async showMainWindowCommand() : Promise<Result<null, string>> {
 async cancelOperation() : Promise<void> {
     await TAURI_INVOKE("cancel_operation");
 },
+async getCleanupStatus() : Promise<CleanupStatus> {
+    return await TAURI_INVOKE("get_cleanup_status");
+},
+async changeSmartCleanupSetting(enabled: boolean) : Promise<Result<null, string>> {
+    try {
+    return { status: "ok", data: await TAURI_INVOKE("change_smart_cleanup_setting", { enabled }) };
+} catch (e) {
+    if(e instanceof Error) throw e;
+    else return { status: "error", error: e  as any };
+}
+},
+async startCleanupDownload() : Promise<void> {
+    await TAURI_INVOKE("start_cleanup_download");
+},
+async cancelCleanupDownload() : Promise<void> {
+    await TAURI_INVOKE("cancel_cleanup_download");
+},
+async deleteCleanupModel() : Promise<Result<null, string>> {
+    try {
+    return { status: "ok", data: await TAURI_INVOKE("delete_cleanup_model") };
+} catch (e) {
+    if(e instanceof Error) throw e;
+    else return { status: "error", error: e  as any };
+}
+},
 async isPortable() : Promise<boolean> {
     return await TAURI_INVOKE("is_portable");
 },
@@ -1153,7 +1178,12 @@ airpods_mode?: boolean; keyboard_implementation?: KeyboardImplementation; show_t
  * after the target app actually reads the transcript, instead of after a
  * fixed delay. See `paste_tx`. macOS and Windows only.
  */
-reliable_paste?: boolean; typing_tool?: TypingTool; external_script_path?: string | null; filler_word_removal_enabled?: boolean; custom_filler_words?: string[] | null; 
+reliable_paste?: boolean; typing_tool?: TypingTool; external_script_path?: string | null; filler_word_removal_enabled?: boolean; 
+/**
+ * Optional on-device cleanup of each dictation (removes fillers, applies
+ * self-corrections). Off by default; see `crate::cleanup`.
+ */
+smart_cleanup_enabled?: boolean; custom_filler_words?: string[] | null; 
 /**
  * Fresh installs default from the OS locale; existing stores are migrated
  * in `apply_settings_migrations`.
@@ -1207,6 +1237,27 @@ export type BindingResponse = { success: boolean; binding: ShortcutBinding | nul
  * Script applied to Mandarin and Cantonese output. Traditional carries its region
  * (Taiwan vs Hong Kong forms, e.g. 裡/裏) rather than guessing it.
  */
+export type CleanupStatus = { 
+/**
+ * The setting in General.
+ */
+enabled: boolean; 
+/**
+ * Both model files are on disk and verified.
+ */
+files_ready: boolean; downloading: boolean; 
+/**
+ * The model is in memory right now.
+ */
+loaded: boolean; 
+/**
+ * Bytes received so far while downloading (as a number the UI can use).
+ */
+downloaded_bytes: number; total_bytes: number; 
+/**
+ * A plain-language problem to show, if the last download failed.
+ */
+error: string | null }
 export type ChineseScript = 
 /**
  * Keep whatever script the model produced.

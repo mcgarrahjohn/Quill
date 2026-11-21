@@ -898,6 +898,20 @@
           "details": "Quill는 빠르고 로컬 음성-텍스트 처리를 위해 ggml를 사용합니다. Georgi Gerganov와 기여자들의 놀라운 작업에 감사드립니다."
         }
       }
+    },
+    "cleanup": {
+      "title": "군말 제거",
+      "label": "받아쓰기 정리",
+      "description": "“음”, “어”를 지우고 정정은 반영합니다(“셋, 아니, 넷”은 “넷”). 로컬에서 실행됩니다.",
+      "needsDownload": "1.1 GB, 한 번만.",
+      "download": "다운로드",
+      "downloading": "다운로드 중… {{percent}}%",
+      "cancel": "취소",
+      "failed": "다운로드에 실패했습니다: {{error}}",
+      "retry": "다시 시도",
+      "ready": "준비됨.",
+      "onDisk": "디스크의 모델({{size}} GB).",
+      "remove": "삭제"
     }
   },
   "footer": {

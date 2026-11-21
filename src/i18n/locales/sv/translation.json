@@ -898,6 +898,20 @@
           "details": "Quill använder ggml för snabb, lokal tal-till-text-behandling. Tack till det fantastiska arbete som utförts av Georgi Gerganov med medarbetare."
         }
       }
+    },
+    "cleanup": {
+      "title": "Ta bort utfyllnadsord",
+      "label": "Städa upp diktering",
+      "description": "Tar bort “öh” och “eh” och behåller din rättelse (“tre, nej, fyra” blir “fyra”). Körs lokalt.",
+      "needsDownload": "1,1 GB, en gång.",
+      "download": "Ladda ner",
+      "downloading": "Laddar ner… {{percent}} %",
+      "cancel": "Avbryt",
+      "failed": "Nedladdningen misslyckades: {{error}}",
+      "retry": "Försök igen",
+      "ready": "Klart.",
+      "onDisk": "Modell på disk ({{size}} GB).",
+      "remove": "Ta bort"
     }
   },
   "footer": {

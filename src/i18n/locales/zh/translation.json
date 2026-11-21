@@ -898,6 +898,20 @@
           "details": "Quill 使用 ggml 进行快速的本地语音转文字处理。感谢 Georgi Gerganov 和贡献者们的出色工作。"
         }
       }
+    },
+    "cleanup": {
+      "title": "去除口头语",
+      "label": "整理听写内容",
+      "description": "去掉“嗯”“呃”，并保留你的更正（“三，不，四”变为“四”）。在本地运行。",
+      "needsDownload": "1.1 GB，仅一次。",
+      "download": "下载",
+      "downloading": "正在下载… {{percent}}%",
+      "cancel": "取消",
+      "failed": "下载失败：{{error}}",
+      "retry": "重试",
+      "ready": "已就绪。",
+      "onDisk": "磁盘上的模型（{{size}} GB）。",
+      "remove": "移除"
     }
   },
   "footer": {

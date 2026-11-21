@@ -898,6 +898,20 @@
           "details": "Quills lokale tale-til-tekst funktionalitet er bygget på transcribe.cpp og ggml. Tak for det fantastiske arbejde af Georgi Gerganov og bidragyderne."
         }
       }
+    },
+    "cleanup": {
+      "title": "Fjern fyldeord",
+      "label": "Ryd op i diktering",
+      "description": "Fjerner “øh” og “æh” og beholder din rettelse (“tre, nej, fire” bliver til “fire”). Kører lokalt.",
+      "needsDownload": "1,1 GB, én gang.",
+      "download": "Download",
+      "downloading": "Downloader… {{percent}} %",
+      "cancel": "Annuller",
+      "failed": "Downloaden mislykkedes: {{error}}",
+      "retry": "Prøv igen",
+      "ready": "Klar.",
+      "onDisk": "Model på disken ({{size}} GB).",
+      "remove": "Fjern"
     }
   },
   "footer": {

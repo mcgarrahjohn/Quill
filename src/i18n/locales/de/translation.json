@@ -898,6 +898,20 @@
           "details": "Quill verwendet ggml für schnelle, lokale Sprach-zu-Text-Verarbeitung. Dank an Georgi Gerganov und die Mitwirkenden für ihre großartige Arbeit."
         }
       }
+    },
+    "cleanup": {
+      "title": "Füllwörter entfernen",
+      "label": "Diktat bereinigen",
+      "description": "Entfernt „äh“ und „ähm“ und übernimmt deine Korrektur („drei, nein, vier“ wird zu „vier“). Läuft lokal.",
+      "needsDownload": "1,1 GB, einmalig.",
+      "download": "Herunterladen",
+      "downloading": "Wird heruntergeladen … {{percent}} %",
+      "cancel": "Abbrechen",
+      "failed": "Der Download ist fehlgeschlagen: {{error}}",
+      "retry": "Erneut versuchen",
+      "ready": "Bereit.",
+      "onDisk": "Modell auf dem Datenträger ({{size}} GB).",
+      "remove": "Entfernen"
     }
   },
   "footer": {

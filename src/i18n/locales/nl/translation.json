@@ -898,6 +898,20 @@
           "details": "Quill's lokale spraak-naar-tekst is gebouwd op transcribe.cpp en ggml. Met dank aan het geweldige werk van Georgi Gerganov en alle bijdragers."
         }
       }
+    },
+    "cleanup": {
+      "title": "Stopwoorden verwijderen",
+      "label": "Dictaat opschonen",
+      "description": "Verwijdert “eh” en “uhm” en houdt je correctie (“drie, nee, vier” wordt “vier”). Draait lokaal.",
+      "needsDownload": "1,1 GB, eenmalig.",
+      "download": "Downloaden",
+      "downloading": "Downloaden… {{percent}}%",
+      "cancel": "Annuleren",
+      "failed": "Downloaden is mislukt: {{error}}",
+      "retry": "Opnieuw proberen",
+      "ready": "Klaar.",
+      "onDisk": "Model op schijf ({{size}} GB).",
+      "remove": "Verwijderen"
     }
   },
   "footer": {

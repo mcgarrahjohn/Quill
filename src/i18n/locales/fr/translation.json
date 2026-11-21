@@ -898,6 +898,20 @@
           "details": "Quill utilise ggml pour un traitement rapide et local de la parole en texte. Merci au travail incroyable de Georgi Gerganov et des contributeurs."
         }
       }
+    },
+    "cleanup": {
+      "title": "Supprimer les mots de remplissage",
+      "label": "Nettoyer la dictée",
+      "description": "Supprime les « euh » et garde votre correction (« trois, non, quatre » devient « quatre »). S’exécute localement.",
+      "needsDownload": "1,1 Go, une seule fois.",
+      "download": "Télécharger",
+      "downloading": "Téléchargement… {{percent}} %",
+      "cancel": "Annuler",
+      "failed": "Le téléchargement a échoué : {{error}}",
+      "retry": "Réessayer",
+      "ready": "Prêt.",
+      "onDisk": "Modèle sur le disque ({{size}} Go).",
+      "remove": "Supprimer"
     }
   },
   "footer": {

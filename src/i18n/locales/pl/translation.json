@@ -898,6 +898,20 @@
           "details": "Quill używa ggml do szybkiego, lokalnego przetwarzania mowy na tekst. Dzięki niesamowitej pracy Georgi Gerganova i współtwórców."
         }
       }
+    },
+    "cleanup": {
+      "title": "Usuń słowa-wypełniacze",
+      "label": "Oczyść dyktowanie",
+      "description": "Usuwa „yyy” i „eee” oraz zachowuje twoją poprawkę („trzy, nie, cztery” zmienia się w „cztery”). Działa lokalnie.",
+      "needsDownload": "1,1 GB, jednorazowo.",
+      "download": "Pobierz",
+      "downloading": "Pobieranie… {{percent}}%",
+      "cancel": "Anuluj",
+      "failed": "Pobieranie nie powiodło się: {{error}}",
+      "retry": "Spróbuj ponownie",
+      "ready": "Gotowe.",
+      "onDisk": "Model na dysku ({{size}} GB).",
+      "remove": "Usuń"
     }
   },
   "footer": {

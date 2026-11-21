@@ -466,6 +466,16 @@ pub(crate) async fn process_transcription_output(
     let mut post_process_prompt: Option<String> = None;
     let mut post_process_failed = false;
 
+    // Optional on-device cleanup (fillers, self-corrections). Falls back to the
+    // plain transcript whenever it is off, not ready, too slow, or fails its safety net.
+    if settings.smart_cleanup_enabled {
+        if let Some(cleanup) = app.try_state::<std::sync::Arc<crate::cleanup::CleanupManager>>() {
+            if let Some(cleaned) = cleanup.clean(&final_text).await {
+                final_text = cleaned;
+            }
+        }
+    }
+
     if post_process {
         // A reply that's blank once cleaned is no better than none.
         let outcome = match tokio::time::timeout(
@@ -559,6 +569,9 @@ impl ShortcutAction for TranscribeAction {
         RECORDING_SESSION.fetch_add(1, Ordering::SeqCst);
         let tray_started = Instant::now();
         set_tray_state(app, TrayIconState::Recording);
+        if let Some(cleanup) = app.try_state::<std::sync::Arc<crate::cleanup::CleanupManager>>() {
+            cleanup.preload(); // no-op unless the setting is on and the model is downloaded
+        }
         let tray_elapsed = tray_started.elapsed();
 
         // Get the microphone mode to determine audio feedback timing

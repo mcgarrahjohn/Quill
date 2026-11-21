@@ -898,6 +898,20 @@
           "details": "Quill 使用 ggml 進行快速的本機語音轉文字處理。感謝 Georgi Gerganov 和貢獻者們的傑出工作"
         }
       }
+    },
+    "cleanup": {
+      "title": "移除贅詞",
+      "label": "整理聽寫內容",
+      "description": "移除「嗯」「呃」，並保留你的更正（「三，不，四」會變成「四」）。在本機執行。",
+      "needsDownload": "1.1 GB，僅一次。",
+      "download": "下載",
+      "downloading": "正在下載… {{percent}}%",
+      "cancel": "取消",
+      "failed": "下載失敗：{{error}}",
+      "retry": "重試",
+      "ready": "已就緒。",
+      "onDisk": "磁碟上的模型（{{size}} GB）。",
+      "remove": "移除"
     }
   },
   "footer": {

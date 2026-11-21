@@ -898,6 +898,20 @@
           "details": "Fitur ucapan-ke-teks lokal Quill dibangun menggunakan transcribe.cpp dan ggml. Terima kasih kepada Georgi Gerganov dan para kontributor atas karya luar biasa mereka."
         }
       }
+    },
+    "cleanup": {
+      "title": "Hapus kata pengisi",
+      "label": "Bersihkan dikte",
+      "description": "Menghapus “eh” dan “um”, dan mempertahankan koreksi Anda (“tiga, bukan, empat” menjadi “empat”). Berjalan secara lokal.",
+      "needsDownload": "1,1 GB, sekali saja.",
+      "download": "Unduh",
+      "downloading": "Mengunduh… {{percent}}%",
+      "cancel": "Batal",
+      "failed": "Unduhan gagal: {{error}}",
+      "retry": "Coba lagi",
+      "ready": "Siap.",
+      "onDisk": "Model di disk ({{size}} GB).",
+      "remove": "Hapus"
     }
   },
   "footer": {

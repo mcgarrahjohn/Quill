@@ -6,6 +6,7 @@ pub mod audio_toolkit;
 mod autostart;
 mod catalog;
 mod chinese_script;
+mod cleanup;
 pub mod cli;
 mod clipboard;
 mod commands;
@@ -225,6 +226,9 @@ fn initialize_core_logic(app_handle: &AppHandle) {
     app_handle.manage(model_manager.clone());
     app_handle.manage(transcription_manager.clone());
     app_handle.manage(history_manager.clone());
+    app_handle.manage(
+        cleanup::CleanupManager::new(app_handle).expect("Failed to initialize cleanup manager"),
+    );
     app_handle.manage(tray::TrayState::new());
     app_handle.manage(TranscriptionJobManager::new(app_handle));
 
@@ -758,6 +762,11 @@ pub fn run(cli_args: CliArgs) {
             trigger_update_check,
             show_main_window_command,
             commands::cancel_operation,
+            commands::cleanup::get_cleanup_status,
+            commands::cleanup::change_smart_cleanup_setting,
+            commands::cleanup::start_cleanup_download,
+            commands::cleanup::cancel_cleanup_download,
+            commands::cleanup::delete_cleanup_model,
             commands::is_portable,
             commands::is_update_checks_locked,
             commands::get_app_dir_path,

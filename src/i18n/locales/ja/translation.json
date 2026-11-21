@@ -898,6 +898,20 @@
           "details": "Quill のローカルの音声からテキストへの文字起こしは transcribe.cpp と ggml を基盤としています。Georgi Gerganov 氏と貢献者の皆様の素晴らしい仕事に感謝します。"
         }
       }
+    },
+    "cleanup": {
+      "title": "フィラー語を削除",
+      "label": "音声入力を整える",
+      "description": "「えー」「あのー」を取り除き、言い直しは残します（「3、いや、4」は「4」に）。ローカルで動作します。",
+      "needsDownload": "1.1 GB、1回のみ。",
+      "download": "ダウンロード",
+      "downloading": "ダウンロード中… {{percent}}%",
+      "cancel": "キャンセル",
+      "failed": "ダウンロードに失敗しました: {{error}}",
+      "retry": "再試行",
+      "ready": "準備完了。",
+      "onDisk": "ディスク上のモデル（{{size}} GB）。",
+      "remove": "削除"
     }
   },
   "footer": {
