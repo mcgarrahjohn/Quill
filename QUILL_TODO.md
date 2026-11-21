@@ -77,8 +77,8 @@ Quill currently downloads speech models from the original project's Hugging Face
 - [ ] **If you host them yourself:** copy the chosen files to your own Hugging Face account or storage (`scripts/mirror_models.py` helps), then change the repository ids in `src-tauri/src/catalog/catalog.json` and the mirror address in `src-tauri/src/catalog/mod.rs`. The five older Whisper models are also public in the `ggerganov/whisper.cpp` Hugging Face repo.
 Where the addresses live: `src-tauri/src/catalog/catalog.json`, `src-tauri/src/catalog/mod.rs`, `src-tauri/src/managers/model.rs`.
 
-## 12. Fix filler words (on-device cleanup)
-Built in: General → "Fix filler words and self-corrections", off by default. Off means no download and no extra memory. On downloads Qwen2.5-1.5B (about 1 GB) once, then cleans each dictation after the speech model, in about 0.2–0.5 s on a Mac (0.7 s CPU). A safety check pastes the original text if the cleaned text looks wrong.
+## 12. Remove filler words (on-device cleanup)
+Built in: General → "Remove filler words", off by default. Off means no download and no extra memory. On downloads Qwen2.5-1.5B (about 1 GB) once, then cleans each dictation after the speech model, in about 0.2–0.5 s on a Mac (0.7 s CPU). A safety check pastes the original text if the cleaned text looks wrong.
 - [ ] Test the Windows (x64 and ARM) and Linux builds from GitHub Actions: candle is untested there (CPU only).
 - [ ] English-focused: other languages may be left unchanged or cleaned poorly. Consider saying so in the UI.
 - [ ] Tricky corrections ("option A, actually no, option B") can still come out wrong; the safety check mostly catches this.

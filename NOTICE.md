@@ -23,7 +23,7 @@ Bundled in `src/assets/fonts/`, both under the SIL Open Font License 1.1:
 - **Fraunces** (titles) from Undercase Type.
 - **Hanken Grotesk** (interface text) from Hanken Design Co.
 
-## Text cleanup (optional "Fix filler words" feature)
+## Text cleanup (optional "Remove filler words" feature)
 
 - **Qwen2.5-1.5B-Instruct** (Alibaba Cloud / Qwen team), Apache-2.0. Downloaded on request from Qwen's official Hugging Face repositories; never bundled.
 - **candle** (Hugging Face), MIT or Apache-2.0. Runs the model on the user's device.
