@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "Hapus kata pengisi",
       "label": "Bersihkan dikte",
-      "description": "Menghapus “eh” dan “um”, dan mempertahankan koreksi Anda (“tiga, bukan, empat” menjadi “empat”). Berjalan secara lokal.",
+      "description": "Menghapus “eh” dan “um”, dan mempertahankan koreksi Anda (“tiga, bukan, empat” menjadi “empat”).",
       "needsDownload": "1,1 GB, sekali saja.",
       "download": "Unduh",
       "downloading": "Mengunduh… {{percent}}%",
@@ -911,7 +911,8 @@
       "retry": "Coba lagi",
       "ready": "Siap.",
       "onDisk": "Model di disk ({{size}} GB).",
-      "remove": "Hapus"
+      "remove": "Hapus",
+      "howItWorks": "Cara kerjanya"
     }
   },
   "footer": {

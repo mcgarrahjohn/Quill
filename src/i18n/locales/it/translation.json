@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "Rimuovi le parole riempitive",
       "label": "Ripulisci il dettato",
-      "description": "Elimina “ehm” e “uh” e mantiene la tua correzione (“tre, no, quattro” diventa “quattro”). Funziona in locale.",
+      "description": "Elimina “ehm” e “uh” e mantiene la tua correzione (“tre, no, quattro” diventa “quattro”).",
       "needsDownload": "1,1 GB, una sola volta.",
       "download": "Scarica",
       "downloading": "Download in corso… {{percent}}%",
@@ -911,7 +911,8 @@
       "retry": "Riprova",
       "ready": "Pronto.",
       "onDisk": "Modello su disco ({{size}} GB).",
-      "remove": "Rimuovi"
+      "remove": "Rimuovi",
+      "howItWorks": "Come funziona"
     }
   },
   "footer": {

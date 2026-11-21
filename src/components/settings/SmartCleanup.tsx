@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { listen } from "@tauri-apps/api/event";
+import { openUrl } from "@tauri-apps/plugin-opener";
 import { commands, type CleanupStatus } from "@/bindings";
 import { ToggleSwitch } from "../ui/ToggleSwitch";
 import { Button } from "../ui/Button";
@@ -12,6 +13,8 @@ interface SmartCleanupProps {
 }
 
 const GB = 1024 ** 3;
+const HELP_URL =
+  "https://github.com/mcgarrahjohn/quill/blob/main/docs/remove-filler-words.md";
 
 /**
  * "Fix filler words and self-corrections": an optional on-device cleanup.
@@ -147,6 +150,18 @@ export const SmartCleanup: React.FC<SmartCleanupProps> = React.memo(
           label=""
           ariaLabel={t("settings.cleanup.label")}
           description={t("settings.cleanup.description")}
+          descriptionExtra={
+            <>
+              {" "}
+              <button
+                type="button"
+                className="underline text-ink-2 hover:text-ink"
+                onClick={() => openUrl(HELP_URL)}
+              >
+                {t("settings.cleanup.howItWorks")} ↗
+              </button>
+            </>
+          }
           descriptionMode={descriptionMode}
           grouped={grouped}
         />

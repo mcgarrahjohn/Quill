@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "Supprimer les mots de remplissage",
       "label": "Nettoyer la dictée",
-      "description": "Supprime les « euh » et garde votre correction (« trois, non, quatre » devient « quatre »). S’exécute localement.",
+      "description": "Supprime les « euh » et garde votre correction (« trois, non, quatre » devient « quatre »).",
       "needsDownload": "1,1 Go, une seule fois.",
       "download": "Télécharger",
       "downloading": "Téléchargement… {{percent}} %",
@@ -911,7 +911,8 @@
       "retry": "Réessayer",
       "ready": "Prêt.",
       "onDisk": "Modèle sur le disque ({{size}} Go).",
-      "remove": "Supprimer"
+      "remove": "Supprimer",
+      "howItWorks": "Comment ça marche"
     }
   },
   "footer": {

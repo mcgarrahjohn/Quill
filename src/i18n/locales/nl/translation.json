@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "Stopwoorden verwijderen",
       "label": "Dictaat opschonen",
-      "description": "Verwijdert “eh” en “uhm” en houdt je correctie (“drie, nee, vier” wordt “vier”). Draait lokaal.",
+      "description": "Verwijdert “eh” en “uhm” en houdt je correctie (“drie, nee, vier” wordt “vier”).",
       "needsDownload": "1,1 GB, eenmalig.",
       "download": "Downloaden",
       "downloading": "Downloaden… {{percent}}%",
@@ -911,7 +911,8 @@
       "retry": "Opnieuw proberen",
       "ready": "Klaar.",
       "onDisk": "Model op schijf ({{size}} GB).",
-      "remove": "Verwijderen"
+      "remove": "Verwijderen",
+      "howItWorks": "Hoe het werkt"
     }
   },
   "footer": {

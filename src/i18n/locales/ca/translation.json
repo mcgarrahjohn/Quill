@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "Treu les mots de farciment",
       "label": "Neteja el dictat",
-      "description": "Elimina “eh” i “mm” i conserva la teva correcció (“tres, no, quatre” passa a “quatre”). S’executa localment.",
+      "description": "Elimina “eh” i “mm” i conserva la teva correcció (“tres, no, quatre” passa a “quatre”).",
       "needsDownload": "1,1 GB, una sola vegada.",
       "download": "Baixa",
       "downloading": "S’està baixant… {{percent}}%",
@@ -911,7 +911,8 @@
       "retry": "Torna-ho a provar",
       "ready": "A punt.",
       "onDisk": "Model al disc ({{size}} GB).",
-      "remove": "Elimina"
+      "remove": "Elimina",
+      "howItWorks": "Com funciona"
     }
   },
   "footer": {

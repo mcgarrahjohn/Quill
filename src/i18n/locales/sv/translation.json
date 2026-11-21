@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "Ta bort utfyllnadsord",
       "label": "Städa upp diktering",
-      "description": "Tar bort “öh” och “eh” och behåller din rättelse (“tre, nej, fyra” blir “fyra”). Körs lokalt.",
+      "description": "Tar bort “öh” och “eh” och behåller din rättelse (“tre, nej, fyra” blir “fyra”).",
       "needsDownload": "1,1 GB, en gång.",
       "download": "Ladda ner",
       "downloading": "Laddar ner… {{percent}} %",
@@ -911,7 +911,8 @@
       "retry": "Försök igen",
       "ready": "Klart.",
       "onDisk": "Modell på disk ({{size}} GB).",
-      "remove": "Ta bort"
+      "remove": "Ta bort",
+      "howItWorks": "Så fungerar det"
     }
   },
   "footer": {

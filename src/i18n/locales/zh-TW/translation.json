@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "移除贅詞",
       "label": "整理聽寫內容",
-      "description": "移除「嗯」「呃」，並保留你的更正（「三，不，四」會變成「四」）。在本機執行。",
+      "description": "移除「嗯」「呃」，並保留你的更正（「三，不，四」會變成「四」）。",
       "needsDownload": "1.1 GB，僅一次。",
       "download": "下載",
       "downloading": "正在下載… {{percent}}%",
@@ -911,7 +911,8 @@
       "retry": "重試",
       "ready": "已就緒。",
       "onDisk": "磁碟上的模型（{{size}} GB）。",
-      "remove": "移除"
+      "remove": "移除",
+      "howItWorks": "運作方式"
     }
   },
   "footer": {

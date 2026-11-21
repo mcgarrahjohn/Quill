@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "Remove filler words",
       "label": "Clean up dictation",
-      "description": "Drops “um” and “uh”, and keeps your correction (“three, no, four” becomes “four”). Runs locally.",
+      "description": "Drops “um” and “uh”, and keeps your correction (“three, no, four” becomes “four”).",
       "needsDownload": "1.1 GB, one time.",
       "download": "Download",
       "downloading": "Downloading… {{percent}}%",
@@ -911,7 +911,8 @@
       "retry": "Try again",
       "ready": "Ready.",
       "onDisk": "Model on disk ({{size}} GB).",
-      "remove": "Remove"
+      "remove": "Remove",
+      "howItWorks": "How it works"
     }
   },
   "footer": {
