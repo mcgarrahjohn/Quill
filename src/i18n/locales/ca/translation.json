@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "Neteja",
       "label": "Treu les mots de farciment",
-      "description": "Elimina “eh” i “mm” i conserva la teva correcció (“tres, no, quatre” passa a “quatre”). S’executa al teu ordinador.",
+      "description": "Neteja les frases de farciment i aplica les teves correccions (“tres, no, quatre” passa a “quatre”). S’executa al teu ordinador.",
       "needsDownload": "1,1 GB, una sola vegada.",
       "download": "Baixa",
       "downloading": "S’està baixant… {{percent}}%",

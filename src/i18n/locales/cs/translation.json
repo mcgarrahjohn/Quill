@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "Čištění",
       "label": "Odstranit vycpávková slova",
-      "description": "Odstraní „ehm“ a „ee“ a ponechá vaši opravu („tři, ne, čtyři“ se změní na „čtyři“). Běží na vašem počítači.",
+      "description": "Čistí vycpávkové fráze a uplatňuje vaše opravy („tři, ne, čtyři“ se změní na „čtyři“). Běží na vašem počítači.",
       "needsDownload": "1,1 GB, jednorázově.",
       "download": "Stáhnout",
       "downloading": "Stahování… {{percent}} %",

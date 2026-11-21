@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "Cleanup",
       "label": "Remove filler words",
-      "description": "Drops “um” and “uh”, and keeps your correction (“three, no, four” becomes “four”). Runs on your computer.",
+      "description": "Cleans up filler phrases and applies your corrections (“three, no, four” becomes “four”). Runs on your computer.",
       "needsDownload": "1.1 GB, one time.",
       "download": "Download",
       "downloading": "Downloading… {{percent}}%",

@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "Bereinigung",
       "label": "Füllwörter entfernen",
-      "description": "Entfernt „äh“ und „ähm“ und übernimmt deine Korrektur („drei, nein, vier“ wird zu „vier“). Läuft auf deinem Computer.",
+      "description": "Bereinigt Füllphrasen und übernimmt deine Korrekturen („drei, nein, vier“ wird zu „vier“). Läuft auf deinem Computer.",
       "needsDownload": "1,1 GB, einmalig.",
       "download": "Herunterladen",
       "downloading": "Wird heruntergeladen … {{percent}} %",

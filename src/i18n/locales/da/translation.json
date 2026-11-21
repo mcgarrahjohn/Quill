@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "Oprydning",
       "label": "Fjern fyldeord",
-      "description": "Fjerner “øh” og “æh” og beholder din rettelse (“tre, nej, fire” bliver til “fire”). Kører på din computer.",
+      "description": "Rydder op i fyldefraser og anvender dine rettelser (“tre, nej, fire” bliver til “fire”). Kører på din computer.",
       "needsDownload": "1,1 GB, én gang.",
       "download": "Download",
       "downloading": "Downloader… {{percent}} %",

@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "Làm sạch",
       "label": "Xóa từ đệm",
-      "description": "Xóa “ừm” và “à”, giữ lại phần sửa của bạn (“ba, không, bốn” thành “bốn”). Chạy trên máy tính của bạn.",
+      "description": "Dọn các cụm từ đệm và áp dụng phần sửa của bạn (“ba, không, bốn” thành “bốn”). Chạy trên máy tính của bạn.",
       "needsDownload": "1,1 GB, chỉ một lần.",
       "download": "Tải xuống",
       "downloading": "Đang tải xuống… {{percent}}%",

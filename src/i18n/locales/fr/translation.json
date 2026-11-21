@@ -902,7 +902,7 @@
     "cleanup": {
       "title": "Nettoyage",
       "label": "Supprimer les mots de remplissage",
-      "description": "Supprime les « euh » et garde votre correction (« trois, non, quatre » devient « quatre »). S’exécute sur votre ordinateur.",
+      "description": "Nettoie les tournures de remplissage et applique vos corrections (« trois, non, quatre » devient « quatre »). S’exécute sur votre ordinateur.",
       "needsDownload": "1,1 Go, une seule fois.",
       "download": "Télécharger",
       "downloading": "Téléchargement… {{percent}} %",
