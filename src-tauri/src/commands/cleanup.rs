@@ -1,4 +1,4 @@
-//! Commands for the optional on-device cleanup ("Fix filler words and self-corrections").
+//! Commands for the optional on-device cleanup ("Remove filler words").
 
 use crate::cleanup::{CleanupManager, CleanupStatus};
 use crate::settings::{get_settings, write_settings};

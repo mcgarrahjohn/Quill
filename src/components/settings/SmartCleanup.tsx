@@ -17,7 +17,7 @@ const HELP_URL =
   "https://github.com/mcgarrahjohn/quill/blob/main/docs/remove-filler-words.md";
 
 /**
- * "Fix filler words and self-corrections": an optional on-device cleanup.
+ * "Remove filler words": an optional on-device cleanup.
  * Off by default. Turning it on downloads the model once (about 1 GB); turning
  * it off frees the memory it uses.
  */

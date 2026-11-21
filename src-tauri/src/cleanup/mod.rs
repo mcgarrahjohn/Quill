@@ -1,4 +1,4 @@
-//! "Fix filler words and self-corrections": an optional, fully on-device
+//! "Remove filler words": an optional, fully on-device
 //! cleanup of each dictation.
 //!
 //! After the speech model writes the words, a small text model removes
