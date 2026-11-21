@@ -613,7 +613,7 @@
         }
       },
       "fillerWordRemoval": {
-        "title": "移除語助詞",
+        "title": "移除贅音",
         "description": "從轉錄中移除常見的語助詞。關閉此選項即可保留這些詞。"
       },
       "chineseScript": {
@@ -900,8 +900,8 @@
       }
     },
     "cleanup": {
-      "title": "移除贅詞",
-      "label": "整理聽寫內容",
+      "title": "整理",
+      "label": "移除贅詞",
       "description": "移除「嗯」「呃」，並保留你的更正（「三，不，四」會變成「四」）。在你的電腦上執行。",
       "needsDownload": "1.1 GB，僅一次。",
       "download": "下載",

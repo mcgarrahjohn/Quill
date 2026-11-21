@@ -613,7 +613,7 @@
         }
       },
       "fillerWordRemoval": {
-        "title": "移除语气词",
+        "title": "去除语气音",
         "description": "从转录中移除常见的语气词。关闭此选项即可保留这些词。"
       },
       "chineseScript": {
@@ -900,8 +900,8 @@
       }
     },
     "cleanup": {
-      "title": "去除口头语",
-      "label": "整理听写内容",
+      "title": "整理",
+      "label": "去除口头语",
       "description": "去掉“嗯”“呃”，并保留你的更正（“三，不，四”变为“四”）。在你的电脑上运行。",
       "needsDownload": "1.1 GB，仅一次。",
       "download": "下载",

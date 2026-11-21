@@ -613,7 +613,7 @@
         }
       },
       "fillerWordRemoval": {
-        "title": "Odstranit výplňová slova",
+        "title": "Odstranit vycpávkové zvuky",
         "description": "Odstraňuje běžná slova vyjadřující váhání z přepisů. Vypnutím je zachováte."
       },
       "chineseScript": {
@@ -900,8 +900,8 @@
       }
     },
     "cleanup": {
-      "title": "Odstranit vycpávková slova",
-      "label": "Vyčistit diktování",
+      "title": "Čištění",
+      "label": "Odstranit vycpávková slova",
       "description": "Odstraní „ehm“ a „ee“ a ponechá vaši opravu („tři, ne, čtyři“ se změní na „čtyři“). Běží na vašem počítači.",
       "needsDownload": "1,1 GB, jednorázově.",
       "download": "Stáhnout",

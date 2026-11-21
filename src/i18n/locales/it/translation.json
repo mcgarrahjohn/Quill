@@ -613,7 +613,7 @@
         }
       },
       "fillerWordRemoval": {
-        "title": "Rimuovi le parole riempitive",
+        "title": "Rimuovi i suoni riempitivi",
         "description": "Rimuove le parole di esitazione più comuni dalle trascrizioni. Disattiva per mantenerle."
       },
       "chineseScript": {
@@ -900,8 +900,8 @@
       }
     },
     "cleanup": {
-      "title": "Rimuovi le parole riempitive",
-      "label": "Ripulisci il dettato",
+      "title": "Pulizia",
+      "label": "Rimuovi le parole riempitive",
       "description": "Elimina “ehm” e “uh” e mantiene la tua correzione (“tre, no, quattro” diventa “quattro”). Funziona sul tuo computer.",
       "needsDownload": "1,1 GB, una sola volta.",
       "download": "Scarica",

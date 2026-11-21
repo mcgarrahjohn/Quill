@@ -613,7 +613,7 @@
         }
       },
       "fillerWordRemoval": {
-        "title": "Hapus Kata Pengisi",
+        "title": "Hapus bunyi pengisi",
         "description": "Menghapus kata pengisi umum dari transkripsi. Nonaktifkan untuk mempertahankannya."
       },
       "chineseScript": {
@@ -900,8 +900,8 @@
       }
     },
     "cleanup": {
-      "title": "Hapus kata pengisi",
-      "label": "Bersihkan dikte",
+      "title": "Pembersihan",
+      "label": "Hapus kata pengisi",
       "description": "Menghapus “eh” dan “um”, dan mempertahankan koreksi Anda (“tiga, bukan, empat” menjadi “empat”). Berjalan di komputer Anda.",
       "needsDownload": "1,1 GB, sekali saja.",
       "download": "Unduh",

@@ -613,7 +613,7 @@
         }
       },
       "fillerWordRemoval": {
-        "title": "Ta bort utfyllnadsord",
+        "title": "Ta bort utfyllnadsljud",
         "description": "Tar bort vanliga tvekljud från transkriberingar. Stäng av för att behålla dem."
       },
       "chineseScript": {
@@ -900,8 +900,8 @@
       }
     },
     "cleanup": {
-      "title": "Ta bort utfyllnadsord",
-      "label": "Städa upp diktering",
+      "title": "Städning",
+      "label": "Ta bort utfyllnadsord",
       "description": "Tar bort “öh” och “eh” och behåller din rättelse (“tre, nej, fyra” blir “fyra”). Körs på din dator.",
       "needsDownload": "1,1 GB, en gång.",
       "download": "Ladda ner",

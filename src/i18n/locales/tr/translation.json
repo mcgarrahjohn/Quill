@@ -613,7 +613,7 @@
         }
       },
       "fillerWordRemoval": {
-        "title": "Dolgu Sözcüklerini Kaldır",
+        "title": "Dolgu seslerini kaldır",
         "description": "Transkripsiyonlardaki yaygın duraksama sözcüklerini kaldırır. Bunları korumak için kapatın."
       },
       "chineseScript": {
@@ -900,8 +900,8 @@
       }
     },
     "cleanup": {
-      "title": "Dolgu sözcüklerini kaldır",
-      "label": "Dikteyi temizle",
+      "title": "Temizleme",
+      "label": "Dolgu sözcüklerini kaldır",
       "description": "“Ee” ve “şey” gibi sözcükleri siler, düzeltmenizi korur (“üç, yok, dört” “dört” olur). Bilgisayarınızda çalışır.",
       "needsDownload": "1,1 GB, tek seferlik.",
       "download": "İndir",

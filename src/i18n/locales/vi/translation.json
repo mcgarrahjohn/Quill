@@ -613,7 +613,7 @@
         }
       },
       "fillerWordRemoval": {
-        "title": "Loại bỏ từ đệm",
+        "title": "Xóa âm đệm",
         "description": "Loại bỏ các từ ngập ngừng phổ biến khỏi bản chép lời. Tắt để giữ lại các từ này."
       },
       "chineseScript": {
@@ -900,8 +900,8 @@
       }
     },
     "cleanup": {
-      "title": "Xóa từ đệm",
-      "label": "Làm sạch bản đọc",
+      "title": "Làm sạch",
+      "label": "Xóa từ đệm",
       "description": "Xóa “ừm” và “à”, giữ lại phần sửa của bạn (“ba, không, bốn” thành “bốn”). Chạy trên máy tính của bạn.",
       "needsDownload": "1,1 GB, chỉ một lần.",
       "download": "Tải xuống",

@@ -613,7 +613,7 @@
         }
       },
       "fillerWordRemoval": {
-        "title": "Fjern fyldord",
+        "title": "Fjern fyldelyde",
         "description": "Fjerner almindelige tøveord fra transskriptioner. Slå fra for at beholde dem."
       },
       "chineseScript": {
@@ -900,8 +900,8 @@
       }
     },
     "cleanup": {
-      "title": "Fjern fyldeord",
-      "label": "Ryd op i diktering",
+      "title": "Oprydning",
+      "label": "Fjern fyldeord",
       "description": "Fjerner “øh” og “æh” og beholder din rettelse (“tre, nej, fire” bliver til “fire”). Kører på din computer.",
       "needsDownload": "1,1 GB, én gang.",
       "download": "Download",

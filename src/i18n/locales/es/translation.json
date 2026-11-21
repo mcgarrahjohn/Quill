@@ -613,7 +613,7 @@
         }
       },
       "fillerWordRemoval": {
-        "title": "Eliminar muletillas",
+        "title": "Quitar sonidos de relleno",
         "description": "Elimina las muletillas más comunes de las transcripciones. Desactívalo para conservarlas."
       },
       "chineseScript": {
@@ -900,8 +900,8 @@
       }
     },
     "cleanup": {
-      "title": "Quitar muletillas",
-      "label": "Limpiar el dictado",
+      "title": "Limpieza",
+      "label": "Quitar muletillas",
       "description": "Elimina “eh” y “um”, y conserva tu corrección (“tres, no, cuatro” pasa a “cuatro”). Se ejecuta en tu equipo.",
       "needsDownload": "1,1 GB, una sola vez.",
       "download": "Descargar",

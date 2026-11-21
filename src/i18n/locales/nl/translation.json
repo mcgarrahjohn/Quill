@@ -613,7 +613,7 @@
         }
       },
       "fillerWordRemoval": {
-        "title": "Opvulwoorden verwijderen",
+        "title": "Opvulgeluiden verwijderen",
         "description": "Verwijdert veelvoorkomende aarzelwoorden uit transcripties. Schakel dit uit om ze te behouden."
       },
       "chineseScript": {
@@ -900,8 +900,8 @@
       }
     },
     "cleanup": {
-      "title": "Stopwoorden verwijderen",
-      "label": "Dictaat opschonen",
+      "title": "Opschonen",
+      "label": "Stopwoorden verwijderen",
       "description": "Verwijdert “eh” en “uhm” en houdt je correctie (“drie, nee, vier” wordt “vier”). Draait op je computer.",
       "needsDownload": "1,1 GB, eenmalig.",
       "download": "Downloaden",

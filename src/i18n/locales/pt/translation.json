@@ -613,7 +613,7 @@
         }
       },
       "fillerWordRemoval": {
-        "title": "Remover palavras de preenchimento",
+        "title": "Remover sons de preenchimento",
         "description": "Remove hesitações comuns das transcrições. Desative para mantê-las."
       },
       "chineseScript": {
@@ -900,8 +900,8 @@
       }
     },
     "cleanup": {
-      "title": "Remover palavras de preenchimento",
-      "label": "Limpar o ditado",
+      "title": "Limpeza",
+      "label": "Remover palavras de preenchimento",
       "description": "Remove “hum” e “é”, e mantém sua correção (“três, não, quatro” vira “quatro”). Roda no seu computador.",
       "needsDownload": "1,1 GB, uma única vez.",
       "download": "Baixar",

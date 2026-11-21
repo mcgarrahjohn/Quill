@@ -613,7 +613,7 @@
         }
       },
       "fillerWordRemoval": {
-        "title": "Füllwörter entfernen",
+        "title": "Füllgeräusche entfernen",
         "description": "Entfernt häufige Verzögerungslaute aus Transkriptionen. Deaktivieren Sie diese Option, um sie beizubehalten."
       },
       "chineseScript": {
@@ -900,8 +900,8 @@
       }
     },
     "cleanup": {
-      "title": "Füllwörter entfernen",
-      "label": "Diktat bereinigen",
+      "title": "Bereinigung",
+      "label": "Füllwörter entfernen",
       "description": "Entfernt „äh“ und „ähm“ und übernimmt deine Korrektur („drei, nein, vier“ wird zu „vier“). Läuft auf deinem Computer.",
       "needsDownload": "1,1 GB, einmalig.",
       "download": "Herunterladen",

@@ -613,7 +613,7 @@
         }
       },
       "fillerWordRemoval": {
-        "title": "Elimina les falques",
+        "title": "Treu els sons de farciment",
         "description": "Elimina les expressions de vacil·lació habituals de les transcripcions. Desactiveu aquesta opció per conservar-les."
       },
       "chineseScript": {
@@ -900,8 +900,8 @@
       }
     },
     "cleanup": {
-      "title": "Treu les mots de farciment",
-      "label": "Neteja el dictat",
+      "title": "Neteja",
+      "label": "Treu les mots de farciment",
       "description": "Elimina “eh” i “mm” i conserva la teva correcció (“tres, no, quatre” passa a “quatre”). S’executa al teu ordinador.",
       "needsDownload": "1,1 GB, una sola vegada.",
       "download": "Baixa",

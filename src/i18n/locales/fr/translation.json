@@ -613,7 +613,7 @@
         }
       },
       "fillerWordRemoval": {
-        "title": "Supprimer les mots de remplissage",
+        "title": "Supprimer les sons de remplissage",
         "description": "Supprime les hésitations courantes des transcriptions. Désactivez cette option pour les conserver."
       },
       "chineseScript": {
@@ -900,8 +900,8 @@
       }
     },
     "cleanup": {
-      "title": "Supprimer les mots de remplissage",
-      "label": "Nettoyer la dictée",
+      "title": "Nettoyage",
+      "label": "Supprimer les mots de remplissage",
       "description": "Supprime les « euh » et garde votre correction (« trois, non, quatre » devient « quatre »). S’exécute sur votre ordinateur.",
       "needsDownload": "1,1 Go, une seule fois.",
       "download": "Télécharger",
