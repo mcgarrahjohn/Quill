@@ -31,7 +31,7 @@ export const AboutSettings: React.FC = () => {
 
   const handleDonateClick = async () => {
     try {
-      await openUrl("https://buy.stripe.com/aFa7sFgeha0FaBDepn14400");
+      await openUrl("https://quillspeak.io/donate");
     } catch (error) {
       console.error("Failed to open donate link:", error);
     }
