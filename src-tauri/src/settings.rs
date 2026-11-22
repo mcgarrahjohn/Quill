@@ -1564,7 +1564,10 @@ mod tests {
         assert_eq!(settings.hold_threshold_ms, default_hold_threshold_ms());
         assert!(!settings.audio_feedback);
         assert!(settings.filler_word_removal_enabled);
-        assert!(!settings.smart_cleanup_enabled, "cleanup must be off unless the user turns it on");
+        assert!(
+            !settings.smart_cleanup_enabled,
+            "cleanup must be off unless the user turns it on"
+        );
         // Bindings default to empty; the load path merges the real defaults in.
         assert!(settings.bindings.is_empty());
     }

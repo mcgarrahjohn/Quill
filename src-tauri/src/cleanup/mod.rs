@@ -113,7 +113,8 @@ impl CleanupManager {
     }
 
     pub fn files_ready(&self) -> bool {
-        download::is_present(self.model_dir(), &download::MODEL) && download::is_present(self.model_dir(), &download::TOKENIZER)
+        download::is_present(self.model_dir(), &download::MODEL)
+            && download::is_present(self.model_dir(), &download::TOKENIZER)
     }
 
     fn is_loaded(&self) -> bool {
@@ -159,7 +160,11 @@ impl CleanupManager {
                     info!(
                         "Cleanup model loaded in {:.2}s ({})",
                         started.elapsed().as_secs_f64(),
-                        if engine.uses_gpu() { "graphics chip" } else { "CPU" }
+                        if engine.uses_gpu() {
+                            "graphics chip"
+                        } else {
+                            "CPU"
+                        }
                     );
                     // The setting may have been switched off while loading.
                     if this.enabled() {
@@ -202,8 +207,14 @@ impl CleanupManager {
             .flatten();
         *self.last_used.lock().unwrap() = Instant::now();
         match &result {
-            Some(_) => debug!("Cleanup finished in {:.2}s", started.elapsed().as_secs_f64()),
-            None => debug!("Cleanup skipped or rejected after {:.2}s", started.elapsed().as_secs_f64()),
+            Some(_) => debug!(
+                "Cleanup finished in {:.2}s",
+                started.elapsed().as_secs_f64()
+            ),
+            None => debug!(
+                "Cleanup skipped or rejected after {:.2}s",
+                started.elapsed().as_secs_f64()
+            ),
         }
         result
     }
@@ -273,7 +284,8 @@ impl CleanupManager {
         self.cancel_download();
         self.unload();
         if self.dir.exists() {
-            std::fs::remove_dir_all(&self.dir).map_err(|e| format!("Could not delete the files: {e}"))?;
+            std::fs::remove_dir_all(&self.dir)
+                .map_err(|e| format!("Could not delete the files: {e}"))?;
         }
         self.download.lock().unwrap().downloaded = 0;
         self.emit_status();

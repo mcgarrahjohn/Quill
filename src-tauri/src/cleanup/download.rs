@@ -37,7 +37,9 @@ pub const TOKENIZER: Artifact = Artifact {
 };
 
 pub fn is_present(dir: &Path, art: &Artifact) -> bool {
-    fs::metadata(dir.join(art.file)).map(|m| m.len() == art.bytes).unwrap_or(false)
+    fs::metadata(dir.join(art.file))
+        .map(|m| m.len() == art.bytes)
+        .unwrap_or(false)
 }
 
 fn hash_file(path: &Path) -> std::io::Result<String> {
@@ -83,7 +85,10 @@ pub async fn fetch(
     if offset > 0 {
         request = request.header("Range", format!("bytes={offset}-"));
     }
-    let response = request.send().await.map_err(|e| format!("Could not connect: {e}"))?;
+    let response = request
+        .send()
+        .await
+        .map_err(|e| format!("Could not connect: {e}"))?;
     let status = response.status();
     if !status.is_success() {
         return Err(format!("The download server answered {status}."));
@@ -109,7 +114,8 @@ pub async fn fetch(
             return Err("Cancelled".into());
         }
         let chunk = chunk.map_err(|e| format!("The connection dropped: {e}"))?;
-        file.write_all(&chunk).map_err(|e| format!("Could not write the file: {e}"))?;
+        file.write_all(&chunk)
+            .map_err(|e| format!("Could not write the file: {e}"))?;
         received += chunk.len() as u64;
         progress(received);
     }
@@ -117,7 +123,10 @@ pub async fn fetch(
     drop(file);
 
     if received != art.bytes {
-        return Err(format!("The download was incomplete ({received} of {} bytes).", art.bytes));
+        return Err(format!(
+            "The download was incomplete ({received} of {} bytes).",
+            art.bytes
+        ));
     }
     let want = art.sha256.to_string();
     let check = partial.clone();
@@ -127,7 +136,10 @@ pub async fn fetch(
         .map_err(|e| format!("Could not verify the file: {e}"))?;
     if got != want {
         let _ = fs::remove_file(&partial);
-        return Err("The downloaded file did not match its checksum and was discarded. Please try again.".into());
+        return Err(
+            "The downloaded file did not match its checksum and was discarded. Please try again."
+                .into(),
+        );
     }
     fs::rename(&partial, &dest).map_err(|e| format!("Could not finish the file: {e}"))?;
     Ok(())

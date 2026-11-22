@@ -2665,12 +2665,7 @@ mod tests {
         ];
 
         assert_eq!(
-            hf_cached_path_in(
-                &caches,
-                "OWNER/test-model",
-                "old-revision",
-                "model.gguf"
-            ),
+            hf_cached_path_in(&caches, "OWNER/test-model", "old-revision", "model.gguf"),
             Some(expected)
         );
     }
@@ -2679,30 +2674,16 @@ mod tests {
     fn test_hf_cached_path_prefers_active_cache() {
         let active = TempDir::new().unwrap();
         let legacy = TempDir::new().unwrap();
-        let expected = add_cached_model(
-            active.path(),
-            "OWNER/test-model",
-            "revision",
-            "model.gguf",
-        );
-        add_cached_model(
-            legacy.path(),
-            "OWNER/test-model",
-            "revision",
-            "model.gguf",
-        );
+        let expected =
+            add_cached_model(active.path(), "OWNER/test-model", "revision", "model.gguf");
+        add_cached_model(legacy.path(), "OWNER/test-model", "revision", "model.gguf");
         let caches = vec![
             Cache::new(active.path().to_path_buf()),
             Cache::new(legacy.path().to_path_buf()),
         ];
 
         assert_eq!(
-            hf_cached_path_in(
-                &caches,
-                "OWNER/test-model",
-                "revision",
-                "model.gguf"
-            ),
+            hf_cached_path_in(&caches, "OWNER/test-model", "revision", "model.gguf"),
             Some(expected)
         );
     }

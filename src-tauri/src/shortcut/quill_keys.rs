@@ -27,8 +27,8 @@
 //! polled from a dedicated recording thread. Events are emitted to the frontend
 //! via Tauri's event system.
 
-use quill_keys::{Hotkey, HotkeyId, HotkeyManager, HotkeyState, KeyboardListener};
 use log::{debug, error, info};
+use quill_keys::{Hotkey, HotkeyId, HotkeyManager, HotkeyState, KeyboardListener};
 use serde::Serialize;
 use specta::Type;
 use std::collections::HashMap;

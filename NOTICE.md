@@ -4,16 +4,17 @@ Quill's own source code is released under the MIT License. The full text, includ
 
 Some libraries are included in this repository as local copies. Each keeps its own license file with its original copyright notice, which the MIT and Apache-2.0 licenses require:
 
-| Library | Location | License |
-| --- | --- | --- |
-| `quill-keys` | `src-tauri/crates/quill-keys` | MIT |
-| `quill-recorder` | `src-tauri/crates/quill-recorder` | MIT |
-| `quill-cpal` (a fork of `cpal`) | `src-tauri/crates/quill-cpal` | Apache-2.0 |
-| `@quill/models` | `packages/quill-models` | MIT |
+| Library                         | Location                          | License    |
+| ------------------------------- | --------------------------------- | ---------- |
+| `quill-keys`                    | `src-tauri/crates/quill-keys`     | MIT        |
+| `quill-recorder`                | `src-tauri/crates/quill-recorder` | MIT        |
+| `quill-cpal` (a fork of `cpal`) | `src-tauri/crates/quill-cpal`     | Apache-2.0 |
+| `@quill/models`                 | `packages/quill-models`           | MIT        |
 
 ## Fonts
 
 Bundled in `src/assets/fonts/`, both under the SIL Open Font License 1.1:
+
 - **Fraunces** (titles) from Undercase Type.
 - **Hanken Grotesk** (interface text) from Hanken Design Co.
 

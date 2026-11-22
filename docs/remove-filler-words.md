@@ -20,11 +20,11 @@ Very short phrases (under 4 words) are left alone. If cleanup takes longer than 
 
 ## Speed and memory
 
-| | Toggle off | Toggle on |
-| --- | --- | --- |
-| Download | none | about 1.1 GB, once |
-| Extra memory | none | loaded while you dictate, freed after 10 idle minutes |
-| Added time per dictation | none | about 0.2–0.5 s on a Mac, about 0.7 s on a CPU |
+|                          | Toggle off | Toggle on                                             |
+| ------------------------ | ---------- | ----------------------------------------------------- |
+| Download                 | none       | about 1.1 GB, once                                    |
+| Extra memory             | none       | loaded while you dictate, freed after 10 idle minutes |
+| Added time per dictation | none       | about 0.2–0.5 s on a Mac, about 0.7 s on a CPU        |
 
 Turning the toggle off frees the memory immediately. The **Remove** button deletes the downloaded file.
 

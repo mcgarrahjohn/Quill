@@ -19,3 +19,7 @@ src-tauri/src/catalog/catalog.json
 # Misc
 .DS_Store
 *.log
+
+# Local copies of other projects (kept as published)
+src-tauri/crates
+packages/quill-models
