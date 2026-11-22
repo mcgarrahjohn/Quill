@@ -17,7 +17,7 @@ Quill was created to fill the gap for a truly open source, extensible speech-to-
 
 1. **Press** a configurable keyboard shortcut: hold it to record and release to stop, or tap it to toggle recording on and off (Hold-only and Toggle-only modes are also available)
 2. **Speak** your words while the shortcut is active
-3. **Release** and Quill processes your speech using Whisper
+3. **Release** and Quill processes your speech using your chosen speech model (Parakeet, Whisper, and others)
 4. **Get** your transcribed text pasted directly into whatever app you're using
 
 The process is entirely local:
@@ -29,6 +29,22 @@ The process is entirely local:
 - Works on Windows, macOS, and Linux
 
 **Optional:** [Remove filler words](docs/remove-filler-words.md) cleans up filler phrases and applies your corrections ("three, no, four" becomes "four"). It runs on your computer and is off by default.
+
+## How Quill Is Built
+
+Quill is a desktop app with two halves that talk to each other:
+
+- **The screen** (settings, buttons, first-run steps) is built like a web page, in React and TypeScript.
+- **The engine** is written in Rust. It records the microphone, listens for your global shortcut, runs the speech model and pastes the text into whatever app you are using. The speech recognition itself is C++ code from the open-source ggml project, called from Rust through the `transcribe-cpp` library.
+- **[Tauri](https://tauri.app)** joins the two. It shows the screen in a native window using the web view each operating system already has, so Quill's download is small and it uses far less memory than an app that bundles a whole browser.
+
+### How one project becomes Mac, Windows and Linux apps
+
+1. **One codebase.** The screen and most of the Rust code are the same on every system. The few parts that differ, such as microphone access and global shortcuts, are chosen per system when the app is compiled.
+2. **Each system is built on itself.** Installers need each system's own tools (a `.dmg` needs a Mac, a Windows `.msi` needs Windows), so Quill is compiled on a real machine of each kind.
+3. **GitHub Actions provides those machines.** Starting the [Release workflow](.github/workflows/release.yml) spins up Mac (Apple silicon and Intel), Windows (x64 and ARM) and Linux (x64 and ARM) computers. Each one compiles Quill and produces its installer (`.dmg`, `.exe`/`.msi`, `.deb`/`.AppImage`/`.rpm`), and all of them are collected in one GitHub release.
+
+To build it yourself, see [BUILD.md](BUILD.md).
 
 ## Quick Start
 
