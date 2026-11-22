@@ -480,10 +480,10 @@ Adjust the executable path if needed. This override only applies to apps launche
 
 The goal is to create both a useful tool and a foundation for others to build upon—a well-patterned, simple codebase that serves the community.
 
-## Related Projects
+## Links
 
-- **[Quill CLI](https://github.com/mcgarrahjohn/quill-cli)** - The original Python command-line version
-- **[quillspeak.io](https://quillspeak.io)** - Project website with demos and documentation
+- **[quillspeak.io](https://quillspeak.io)** - Project website
+- **[Donate](https://quillspeak.io/donate)** - Support Quill's development
 
 ## License
 
