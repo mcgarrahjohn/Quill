@@ -1,12 +1,14 @@
 # Remove filler words
 
-An optional Quill feature that cleans up what you dictate. It is **off by default**. Find it in **Settings → General → Remove filler words**.
+An optional Quill feature that cleans up what you dictate. It is **off by default**. Find it in **Settings → General → Cleanup → Remove filler words**.
 
 ## What it does
 
-- Removes fillers such as "um" and "uh".
+- Cleans up filler words and phrases.
 - Applies self-corrections: "three, no wait, four" becomes "four".
 - Changes nothing else. It does not reword, summarize or answer what you said.
+
+Simple sounds like "uh" and "hmm" are already handled by a separate setting, **Remove filler sounds** in **Settings → Advanced**, which is on by default. It is instant and uses a fixed word list. The feature described here goes further by understanding the whole sentence.
 
 Everything runs on your computer. Your voice and your text are never sent anywhere, and no other app (such as Ollama) is needed.
 
