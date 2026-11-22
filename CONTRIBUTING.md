@@ -310,7 +310,7 @@ Look for issues labeled `good first issue` or `help wanted` if you're new to the
 ## 📞 Getting Help
 
 - **Discussions**: Ask questions in [GitHub Discussions](https://github.com/mcgarrahjohn/quill/discussions)
-- **Email**: Reach out at [contact@quill.example](mailto:contact@quill.example)
+- **Questions**: open an issue or discussion on [GitHub](https://github.com/mcgarrahjohn/Quill/issues)
 
 ## 📜 License
 

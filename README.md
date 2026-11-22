@@ -6,7 +6,7 @@ Quill is a cross-platform desktop application that provides simple, privacy-focu
 
 ## Why Quill?
 
-Quill was created to fill the gap for a truly open source, extensible speech-to-text tool. As stated on [quill.example](https://quill.example):
+Quill was created to fill the gap for a truly open source, extensible speech-to-text tool. Its principles:
 
 - **Free**: Accessibility tooling belongs in everyone's hands, not behind a paywall
 - **Open Source**: Together we can build further. Extend Quill for yourself and contribute to something bigger
@@ -34,7 +34,7 @@ The process is entirely local:
 
 ### Installation
 
-1. Download the latest release from the [releases page](https://github.com/mcgarrahjohn/quill/releases) or the [website](https://quill.example)
+1. Download the latest release from the [releases page](https://github.com/mcgarrahjohn/quill/releases) or the [website](https://quillspeak.io)
    - **macOS**: Also available via [Homebrew cask](https://formulae.brew.sh/cask/quill): `brew install --cask quill`
    - **Windows**: Also available via [winget](https://github.com/microsoft/winget-pkgs): `winget install mcgarrahjohn.Quill` \
      **Note:** The Homebrew cask and winget package are not maintained by the Quill developers.
@@ -476,14 +476,14 @@ Adjust the executable path if needed. This override only applies to apps launche
 2. **Fork the repository** and create a feature branch
 3. **Test thoroughly** on your target platform
 4. **Submit a pull request** with clear description of changes
-5. **Join the discussion** - reach out at [contact@quill.example](mailto:contact@quill.example)
+5. **Join the discussion** - open an issue or discussion on [GitHub](https://github.com/mcgarrahjohn/Quill/issues)
 
 The goal is to create both a useful tool and a foundation for others to build upon—a well-patterned, simple codebase that serves the community.
 
 ## Related Projects
 
 - **[Quill CLI](https://github.com/mcgarrahjohn/quill-cli)** - The original Python command-line version
-- **[quill.example](https://quill.example)** - Project website with demos and documentation
+- **[quillspeak.io](https://quillspeak.io)** - Project website with demos and documentation
 
 ## License
 
