@@ -1,7 +1,7 @@
 # quill-cpal
 
 A fork of [cpal](https://github.com/RustAudio/cpal) 0.18.2, published for
-[quill-recorder](https://github.com/mcgarrahjohn/quill-recorder) until upstream
+[quill-recorder](../quill-recorder) until upstream
 releases [RustAudio/cpal#1387](https://github.com/RustAudio/cpal/pull/1387).
 
 Modified from cpal 0.18.2: `src/host/pulseaudio/mod.rs` no longer caps a
