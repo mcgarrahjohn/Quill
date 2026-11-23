@@ -5,7 +5,7 @@ The code, names, colors and icons are Quill. These items need your own accounts 
 ## 1. Placeholders to replace
 
 - ~~`OWNER/quill`~~ DONE: now `mcgarrahjohn/quill` everywhere (README, CONTRIBUTING, updater endpoint, workflows, About page, Homebrew cask).
-- ~~`quill.example`~~ DONE: your domain is `quillspeak.io` (registered at Cloudflare, Nov 22 2026). Still to do: deploy the landing page there (Cloudflare Pages, folder `handy/site/`), add the `/donate` forward, then swap `quillspeak.io/donate` in the app, the page and `.github/FUNDING.yml`.
+- ~~`quill.example`~~ DONE: your domain is `quillspeak.io` (registered at Cloudflare, Nov 22 2026). Still to do: deploy the landing page there (Cloudflare Pages, folder `quill-site/site/`), add the `/donate` forward, then swap `quillspeak.io/donate` in the app, the page and `.github/FUNDING.yml`.
 - `com.quill.desktop`: the bundle identifier. Pick it once; changing it later moves users' settings folders.
 
 ## 2. Auto-update keys (important)
