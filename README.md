@@ -513,6 +513,7 @@ Quill is open-source software, but the Quill name, logo, icon, and brand assets 
 
 ## Acknowledgments
 
+- **CJ Pais** for the open-source base Quill grew from
 - **Whisper** by OpenAI for the speech recognition model
 - **ggml** for an amazing cross-platform tensor library
 - **Silero** for great lightweight VAD
