@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/quill-logo.png" alt="Quill" width="128" height="128">
+</p>
+
 # Quill
 
 **A free, open source, and extensible speech-to-text application that works completely offline.**
